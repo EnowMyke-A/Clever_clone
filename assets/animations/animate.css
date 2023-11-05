@@ -1,29 +1,41 @@
-.zoom-in-400ms-0{
+    
+    .animate-image{
+        visibility: hidden;
+        transform: scale(0.1);
+    }
+
+    .zoom-in-400ms-0.animate{
     animation: zoom-in-400ms 0.6s;
     animation-fill-mode: forwards;
   }
 
-  .zoom-in-400ms-400{
+  .animate.zoom-in-400ms-400{
     animation:zoom-in-400ms 0.6s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
   }
 
-  .zoom-in-400ms-700{
+  .animate.zoom-in-400ms-700{
     animation:zoom-in-400ms 0.6s;
     animation-delay: .7s;
     animation-fill-mode: forwards;
   }
 
-  .zoom-in-400ms-800{
+  .animate.zoom-in-400ms-800{
     animation:zoom-in-400ms 0.6s;
     animation-delay: .8s;
     animation-fill-mode: forwards;
   }
 
-  .animate-underline{
+  .animate.animate-underline{
     animation: Stretch-Underline 1.15s forwards .3s;
   }
+
+  .animate.animateAbout{
+    animation: animateAbout 1.15s forwards .3s;
+  }
+  
+  
 
   @keyframes zoom-in-400ms {
     from{
@@ -44,5 +56,19 @@
     }
     to{
       background-size: 100% 4px;
+    }
+  }
+
+  @keyframes animateAbout{
+    from{
+        top: 0;
+        bottom: 0;
+    }
+
+    to{
+        top: -150px;
+        bottom: -150px;
+        left: 0;
+        right: 0;
     }
   }

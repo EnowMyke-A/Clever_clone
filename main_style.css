@@ -116,6 +116,10 @@ ul {
     margin: 0.2em 0.49em
 }
 
+.cle-header-mobile{
+    z-index: 10;
+}
+
 .contact__help a {
     color: #ffffff;
     text-decoration: underline;

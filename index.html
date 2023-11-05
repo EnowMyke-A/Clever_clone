@@ -49,6 +49,8 @@
     <link rel="stylesheet" href="./main_style.css" />
     <link rel="stylesheet" href="./assets/animations/animate.css" />
     <link rel="stylesheet" href="./assets/icons/bootstrap-icons.min.css" />
+    <script src="./script.js"></script>
+    <script src="./assets/animations/animate.js"></script>
 </head>
 
 <body class="main__body">
@@ -64,7 +66,7 @@
     <header class="header">
         <div class="header__container">
             <div class="menu__logo__container">
-                <button><span class="hamburger__menu"></span></button>
+                <button onclick="slideOpen()"><span class="hamburger__menu"></span></button>
                 <a href="https://www.clever.com/"><img src="./assets/img/logo.png" alt="Logo" /></a>
             </div>
             <div class="navigation__buttons">
@@ -138,7 +140,7 @@
             <div class="detail__section">
                 <h1 class="caption__text">
                     The platform
-                    <span class="underlined animate-underline">powering</span> digital
+                    <span class="underlined animate-underline animate-object">powering</span> digital
                     learning for schools.
                 </h1>
                 <div class="caption__text__expo">
@@ -165,12 +167,12 @@
             </div>
             <div class="first__images">
                 <div class="header-images">
-                    <div class="image-container zoom-in-400ms-0">
+                    <div class="image-container zoom-in-400ms-0 animate-object">
                         <img class="main-image" src="./assets/img/teenagers-at-desk.jpg" alt="teenagers-at-desk" />
                     </div>
                     <div class="vector">
-                        <img class="zoom-in-400ms-400" src="./assets/img/Vector.svg" alt="Vector" />
-                        <svg class="zoom-in-400ms-800" width="95" height="95" viewBox="0 0 95 95" fill="none"
+                        <img class="zoom-in-400ms-400 animate-object" src="./assets/img/Vector.svg" alt="Vector" />
+                        <svg class="zoom-in-400ms-800 animate-object" width="95" height="95" viewBox="0 0 95 95" fill="none"
                             xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px)">
                             <line x1="48.194" y1="0.933105" x2="48.194" y2="26.2089" stroke="#0A1E46"></line>
                             <line x1="48.1941" y1="69.5391" x2="48.1941" y2="94.8149" stroke="#0A1E46"></line>
@@ -190,7 +192,7 @@
                             <line x1="69.3594" y1="47.374" x2="94.6352" y2="47.374" stroke="#0A1E46"></line>
                         </svg>
                     </div>
-                    <img class="vector-2 zoom-in-400ms-700" src="./assets/img/Vector-2.svg" alt="Vector-2" />
+                    <img class="vector-2 zoom-in-400ms-700 animate-object" src="./assets/img/Vector-2.svg" alt="Vector-2" />
                 </div>
             </div>
         </div>
@@ -307,9 +309,9 @@
                     </div>
                     <div class="content__wrapper">
                         <div class="image__container">
-                            <img src="./assets/img/shapes-pattern-2.svg" alt="">
+                            <img src="./assets/img/shapes-pattern-2.svg" alt="" class="animate-object zoom-in-400ms-700 animate-image">
                             <div class="main__image">
-                                <img src="./assets/img/first_img.png" alt="">
+                                <img src="./assets/img/first_img.png" alt="" class="animate-object zoom-in-400ms-400 animate-image">
                             </div>
                         </div>
 
@@ -339,9 +341,9 @@
                     </div>
                     <div class="content__wrapper">
                         <div class="image__container container2">
-                            <img src="./assets/img/shapes-pattern-3.svg" alt="">
+                            <img src="./assets/img/shapes-pattern-3.svg" alt="" class="animate-object zoom-in-400ms-700 animate-image">
                             <div class="main__image">
-                                <img src="./assets/img/second.png" alt="">
+                                <img src="./assets/img/second.png" alt="" class="animate-object zoom-in-400ms-400 animate-image">
                             </div>
                         </div>
 
@@ -372,9 +374,9 @@
                     </div>
                     <div class="content__wrapper">
                         <div class="image__container container3">
-                            <img src="./assets/img/shapes-pattern-4.svg" alt="">
+                            <img src="./assets/img/shapes-pattern-4.svg " alt="" class="animate-object zoom-in-400ms-700 animate-image">
                             <div class="main__image">
-                                <img src="./assets/img//Third.png" alt="">
+                                <img src="./assets/img//Third.png" alt="" class="animate-object zoom-in-400ms-400 animate-image">
                             </div>
                         </div>
 
@@ -412,7 +414,7 @@
                     <div class="content__wrapper">
                         <div class="image__container container2">
                             <div class="main__image">
-                                <img src="./assets/img/Tablet.png" alt="">
+                                <img src="./assets/img/Tablet.png" alt="" class="animate-object zoom-in-400ms-400 animate-image">
                             </div>
                         </div>
 
@@ -427,10 +429,10 @@
         </div>
         <div class="container">
             <div class="image__content__wrapper">
-                <div class="image__content__wrapper__container">
+                <div class="image__content__wrapper__container animateAbout animate-object">
                     <div class="caption__svg__container">
                         <div class="outer__svg__container">
-                            <div class="inner__svg__container">
+                            <div class="inner__svg__container animate-object zoom-in-400ms-400 animate-image">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     viewBox="0 0 178 178" width="178" height="178" preserveAspectRatio="xMidYMid meet"
                                     style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
@@ -800,17 +802,20 @@
                                         <ul class="cle-footer__menu-list">
                                             <li id="menu-item-2379"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2379">
-                                                <a href="https://www.clever.com/schools">For schools</a></li>
+                                                <a href="https://www.clever.com/schools">For schools</a>
+                                            </li>
                                             <li id="menu-item-2377"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2377">
-                                                <a href="https://www.clever.com/partners">For partners</a></li>
+                                                <a href="https://www.clever.com/partners">For partners</a>
+                                            </li>
                                             <li id="menu-item-2380"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2380">
                                                 <a href="https://www.clever.com/teachers-solutions">For teachers</a>
                                             </li>
                                             <li id="menu-item-2378"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378">
-                                                <a href="https://www.clever.com/families">For parents</a></li>
+                                                <a href="https://www.clever.com/families">For parents</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="cle-footer__menu-wrap">
@@ -819,24 +824,30 @@
                                             <li id="menu-item-2383"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2383">
                                                 <a href="https://www.clever.com/rostering-for-partners">Rostering for
-                                                    Partners</a></li>
+                                                    Partners</a>
+                                            </li>
                                             <li id="menu-item-2384"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2384">
                                                 <a href="https://www.clever.com/products/rostering">Rostering for
-                                                    Schools</a></li>
+                                                    Schools</a>
+                                            </li>
                                             <li id="menu-item-2385"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2385">
-                                                <a href="https://www.clever.com/sso-partners">SSO for Partners</a></li>
+                                                <a href="https://www.clever.com/sso-partners">SSO for Partners</a>
+                                            </li>
                                             <li id="menu-item-2386"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2386">
-                                                <a href="https://www.clever.com/products/sso">SSO for Schools</a></li>
+                                                <a href="https://www.clever.com/products/sso">SSO for Schools</a>
+                                            </li>
                                             <li id="menu-item-2382"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2382">
-                                                <a href="https://www.clever.com/products/badges">Clever Badges</a></li>
+                                                <a href="https://www.clever.com/products/badges">Clever Badges</a>
+                                            </li>
                                             <li id="menu-item-2381"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2381">
                                                 <a href="https://www.clever.com/products/clever-analytics">Clever
-                                                    Analytics</a></li>
+                                                    Analytics</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="cle-footer__menu-wrap">
@@ -845,10 +856,12 @@
                                         <ul class="cle-footer__menu-list">
                                             <li id="menu-item-2387"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2387">
-                                                <a href="https://www.clever.com/clever-portal">Classroom Portal</a></li>
+                                                <a href="https://www.clever.com/clever-portal">Classroom Portal</a>
+                                            </li>
                                             <li id="menu-item-2389"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2389">
-                                                <a href="https://www.clever.com/partner-library">Clever Library</a></li>
+                                                <a href="https://www.clever.com/partner-library">Clever Library</a>
+                                            </li>
                                             <li id="menu-item-2388"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2388">
                                                 <a href="https://www.clever.com/clever-messaging">Clever Messaging</a>
@@ -861,11 +874,13 @@
                                             <li id="menu-item-2390"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2390">
                                                 <a href="https://www.clever.com/products/clever-idm">Identity
-                                                    Management</a></li>
+                                                    Management</a>
+                                            </li>
                                             <li id="menu-item-2391"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2391">
                                                 <a href="https://www.clever.com/products/clever-mfa">Multi-factor
-                                                    Authentication</a></li>
+                                                    Authentication</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -880,11 +895,13 @@
                                             </li>
                                             <li id="menu-item-2392"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2392">
-                                                <a href="https://www.clever.com/clever-global">Clever Global</a></li>
+                                                <a href="https://www.clever.com/clever-global">Clever Global</a>
+                                            </li>
                                             <li id="menu-item-2393"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2393">
                                                 <a href="https://www.clever.com/products/clever-parents">Clever
-                                                    Parents</a></li>
+                                                    Parents</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="cle-footer__menu-wrap">
@@ -892,11 +909,13 @@
                                         <ul class="cle-footer__menu-list">
                                             <li id="menu-item-2396"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2396">
-                                                <a href="https://www.clever.com/academy">Clever Academy</a></li>
+                                                <a href="https://www.clever.com/academy">Clever Academy</a>
+                                            </li>
                                             <li id="menu-item-2397"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2397">
                                                 <a href="https://www.clever.com/consulting-services">Consulting
-                                                    Services</a></li>
+                                                    Services</a>
+                                            </li>
                                             <li id="menu-item-2395"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2395">
                                                 <a href="https://www.clever.com/24-7-premium-support">24/7 Support</a>
@@ -908,10 +927,12 @@
                                         <ul class="cle-footer__menu-list">
                                             <li id="menu-item-2399"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2399">
-                                                <a href="https://www.clever.com/pricing">Pricing</a></li>
+                                                <a href="https://www.clever.com/pricing">Pricing</a>
+                                            </li>
                                             <li id="menu-item-2402"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2402">
-                                                <a href="https://www.clever.com/app-gallery">Apps on Clever</a></li>
+                                                <a href="https://www.clever.com/app-gallery">Apps on Clever</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="cle-footer__menu-wrap">
@@ -919,27 +940,34 @@
                                         <ul class="cle-footer__menu-list">
                                             <li id="menu-item-2403"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2403">
-                                                <a href="https://www.clever.com/about">About Us</a></li>
+                                                <a href="https://www.clever.com/about">About Us</a>
+                                            </li>
                                             <li id="menu-item-2407"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2407">
-                                                <a href="https://www.clever.com/trust">Trust</a></li>
+                                                <a href="https://www.clever.com/trust">Trust</a>
+                                            </li>
                                             <li id="menu-item-2404"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2404">
-                                                <a href="https://www.clever.com/about/careers">Careers</a></li>
+                                                <a href="https://www.clever.com/about/careers">Careers</a>
+                                            </li>
                                             <li id="menu-item-2405"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2405">
                                                 <a href="https://www.clever.com/about/diversity-and-inclusion">Clever
-                                                    DEI</a></li>
+                                                    DEI</a>
+                                            </li>
                                             <li id="menu-item-2406"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2406">
-                                                <a href="https://www.clever.com/about/events">Events</a></li>
+                                                <a href="https://www.clever.com/about/events">Events</a>
+                                            </li>
                                             <li id="menu-item-6091"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6091">
-                                                <a href="https://www.clever.com/about/news">News</a></li>
+                                                <a href="https://www.clever.com/about/news">News</a>
+                                            </li>
                                             <li id="menu-item-31"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31">
                                                 <a target="_blank" rel="noopener"
-                                                    href="https://support.clever.com/s/?language=en_US">Contact</a></li>
+                                                    href="https://support.clever.com/s/?language=en_US">Contact</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="cle-footer__menu-wrap">
@@ -953,7 +981,8 @@
                                             <li id="menu-item-24"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24">
                                                 <a target="_blank" rel="noopener"
-                                                    href="https://dev.clever.com/">Developer Docs</a></li>
+                                                    href="https://dev.clever.com/">Developer Docs</a>
+                                            </li>
                                             <li id="menu-item-2408"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2408">
                                                 <a href="https://www.clever.com/resource-library">Resource Library</a>
@@ -962,10 +991,12 @@
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26">
                                                 <a target="_blank" rel="noopener"
                                                     href="https://support.clever.com/hc/s/articles/Product-Releases?language=en_US">Product
-                                                    Releases</a></li>
+                                                    Releases</a>
+                                            </li>
                                             <li id="menu-item-5588"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5588">
-                                                <a href="https://www.clever.com/blog/">Clever Blog</a></li>
+                                                <a href="https://www.clever.com/blog/">Clever Blog</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1029,13 +1060,452 @@
                             target="_self">
                             Accessibility Statement </a>
                     </div>
-                    <!-- <a href="https://www.takeoffnyc.com/" target="_blank" rel="nofolow">
-                            <img class="cle-footer__copyright-logo" src="https://www.clever.com/wp-content/themes/clever/assets/img/copyright-logo.svg" alt="logo">
-                        </a> -->
                 </div>
             </div>
         </div>
     </footer>
+    <div class="cle-header-mobile">
+        <div class="cle-header-mobile__container">
+            <ul id="menu-header-menu-1" class="cle-header-mobile__menu">
+                <li
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7 menu-item_mega-menu">
+                    <div class="menu-item-wrap"><a href="#">Schools</a><button class="open-sub-menu"><svg width="30"
+                                height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                <path
+                                    d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                    fill="#1464FF"></path>
+                            </svg></button></div>
+                    <ul class="sub-menu">
+                        <button class="close-sub-menu"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14.25" transform="rotate(-180 15 15)" fill="white"
+                                    stroke="#1464FF" stroke-width="1.5"></circle>
+                                <path
+                                    d="M9.46967 14.4697C9.17678 14.7626 9.17678 15.2374 9.46967 15.5303L14.2426 20.3033C14.5355 20.5962 15.0104 20.5962 15.3033 20.3033C15.5962 20.0104 15.5962 19.5355 15.3033 19.2426L11.0607 15L15.3033 10.7574C15.5962 10.4645 15.5962 9.98959 15.3033 9.6967C15.0104 9.40381 14.5355 9.40381 14.2426 9.6967L9.46967 14.4697ZM21 14.25L10 14.25L10 15.75L21 15.75L21 14.25Z"
+                                    fill="#1464FF"></path>
+                            </svg><span>Back to Menu</span></button>
+                        <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2050 menu-item_columns-3">
+                            <div class="menu-item-two-level"><a href="https://www.clever.com/schools"><span>Schools
+                                        overview</span><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                        <path
+                                            d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                            fill="#1464FF"></path>
+                                    </svg></a></div>
+                            <ul class="sub-menu">
+                                <li
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2047 is-icon-menu-item">
+                                    <a href="https://www.clever.com/solutions/data-and-access"><img width="48"
+                                            height="64"
+                                            src="https://www.clever.com/wp-content/uploads/2023/06/Layer_1-3-1.png"
+                                            class="attachment-thumbnail size-thumbnail" alt=""
+                                            decoding="async"><span>Data &amp; Access</span>
+                                        <div class="menu-item-free">Free</div>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2085">
+                                            <a href="https://www.clever.com/products/rostering">Secure Sync
+                                                Rostering</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2095">
+                                            <a href="https://www.clever.com/products/sso">Single sign-on</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2187">
+                                            <a href="https://www.clever.com/products/badges">Clever Badges</a></li>
+                                    </ul>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2048 is-icon-menu-item">
+                                    <a href="https://www.clever.com/solutions/identity-and-security"><img width="100"
+                                            height="123"
+                                            src="https://www.clever.com/wp-content/uploads/2023/06/Group-2.png"
+                                            class="attachment-thumbnail size-thumbnail" alt=""
+                                            decoding="async"><span>Identity &amp; Security</span></a>
+                                    <ul class="sub-menu">
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2049">
+                                            <a href="https://www.clever.com/products/clever-idm">Identity Management</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2046 menu-item_default">
+                                            <a href="https://www.clever.com/products/clever-mfa">Multi-Factor
+                                                Authentication</a></li>
+                                    </ul>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2052 menu-item_default is-icon-menu-item">
+                                    <a href="https://www.clever.com/clever-global"><img width="96" height="96"
+                                            src="https://www.clever.com/wp-content/uploads/2023/06/globe-2.png"
+                                            class="attachment-thumbnail size-thumbnail" alt=""
+                                            decoding="async"><span>Clever Global</span></a>
+                                    <ul class="sub-menu">
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6570">
+                                            <a href="https://www.getclever.com/go/">Clever GO</a></li>
+                                    </ul>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2054 menu-item_default is-icon-menu-item">
+                                    <a href="https://www.clever.com/products/digital-classroom"><img width="96"
+                                            height="92"
+                                            src="https://www.clever.com/wp-content/uploads/2023/06/Layer_1-4-1.png"
+                                            class="attachment-thumbnail size-thumbnail" alt=""
+                                            decoding="async"><span>Digital Classroom</span>
+                                        <div class="menu-item-free">Free</div>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2217">
+                                            <a href="https://www.clever.com/clever-portal">Classroom portal</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2195">
+                                            <a href="https://www.clever.com/clever-messaging">Messaging</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2210">
+                                            <a href="https://www.clever.com/products/clever-analytics">Analytics</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1595 is-icon-menu-item">
+                                    <a><img width="96" height="96"
+                                            src="https://www.clever.com/wp-content/uploads/2023/06/support-service-1-1.png"
+                                            class="attachment-thumbnail size-thumbnail" alt=""
+                                            decoding="async"><span>Services</span></a>
+                                    <ul class="sub-menu">
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2055 menu-item_default">
+                                            <a href="https://www.clever.com/clever-training">Clever Training</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2053 menu-item_default">
+                                            <a href="https://www.clever.com/consulting-services">Consulting Services</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2051 menu-item_default">
+                                            <a href="https://www.clever.com/24-7-premium-support">Premium support</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1605 menu-item_dedicated">
+                            <div class="menu-item-two-level"><a href="#"><span>Other Resources</span><svg width="30"
+                                        height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                        <path
+                                            d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                            fill="#1464FF"></path>
+                                    </svg></a></div>
+                            <ul class="sub-menu">
+                                <li
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5253 is-icon-menu-item">
+                                    <a href="https://www.clever.com/pricing"><img width="150" height="150"
+                                            src="https://www.clever.com/wp-content/uploads/2023/07/image-21-150x150.png"
+                                            class="attachment-thumbnail size-thumbnail" alt="" decoding="async"
+                                            srcset="https://www.clever.com/wp-content/uploads/2023/07/image-21-150x150.png 150w, https://www.clever.com/wp-content/uploads/2023/07/image-21-300x300.png 300w, https://www.clever.com/wp-content/uploads/2023/07/image-21.png 400w"
+                                            sizes="(max-width: 150px) 100vw, 150px"><span>Pricing</span></a></li>
+                                <li
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2409 is-icon-menu-item">
+                                    <a href="https://www.clever.com/district-signup"><img width="64" height="96"
+                                            src="https://www.clever.com/wp-content/uploads/2023/06/Isolation_Mode-4.png"
+                                            class="attachment-thumbnail size-thumbnail" alt=""
+                                            decoding="async"><span>Get started with Clever</span></a></li>
+                                <li
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2063 is-icon-menu-item">
+                                    <a href="https://www.clever.com/solutions/interoperability"><img width="120"
+                                            height="120"
+                                            src="https://www.clever.com/wp-content/uploads/2023/06/Frame-427320377-5.png"
+                                            class="attachment-thumbnail size-thumbnail" alt=""
+                                            decoding="async"><span>Interoperability</span></a></li>
+                                <li
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1608 is-icon-menu-item">
+                                    <a href="#"><img width="120" height="120"
+                                            src="https://www.clever.com/wp-content/uploads/2023/06/Frame-427320377-6.png"
+                                            class="attachment-thumbnail size-thumbnail" alt=""
+                                            decoding="async"><span>Resource hubs</span></a>
+                                    <ul class="sub-menu">
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4933">
+                                            <a href="https://www.clever.com/resource-hub/district-admins">District
+                                                admin</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2067">
+                                            <a href="https://www.clever.com/teachers-solutions">Teachers Solutions</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4934">
+                                            <a href="https://www.clever.com/learning-at-home/tech-coaches">School tech
+                                                leads</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2062">
+                                            <a href="https://www.clever.com/google-classroom">Clever + Google</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8 menu-item_mega-menu">
+                    <div class="menu-item-wrap"><a href="#">Application Partners</a><button class="open-sub-menu"><svg
+                                width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                <path
+                                    d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                    fill="#1464FF"></path>
+                            </svg></button></div>
+                    <ul class="sub-menu">
+                        <button class="close-sub-menu"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14.25" transform="rotate(-180 15 15)" fill="white"
+                                    stroke="#1464FF" stroke-width="1.5"></circle>
+                                <path
+                                    d="M9.46967 14.4697C9.17678 14.7626 9.17678 15.2374 9.46967 15.5303L14.2426 20.3033C14.5355 20.5962 15.0104 20.5962 15.3033 20.3033C15.5962 20.0104 15.5962 19.5355 15.3033 19.2426L11.0607 15L15.3033 10.7574C15.5962 10.4645 15.5962 9.98959 15.3033 9.6967C15.0104 9.40381 14.5355 9.40381 14.2426 9.6967L9.46967 14.4697ZM21 14.25L10 14.25L10 15.75L21 15.75L21 14.25Z"
+                                    fill="#1464FF"></path>
+                            </svg><span>Back to Menu</span></button>
+                        <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2058 menu-item_no">
+                            <div class="menu-item-two-level"><a href="https://www.clever.com/partners"><span>Application
+                                        partners overview</span><svg width="30" height="30" viewBox="0 0 30 30"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                        <path
+                                            d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                            fill="#1464FF"></path>
+                                    </svg></a></div>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2127"><a
+                                        href="https://www.clever.com/rostering-for-partners"><span>Secure Sync
+                                            Rostering</span></a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2149"><a
+                                        href="https://www.clever.com/sso-partners"><span>Single sign-on</span></a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2164"><a
+                                        href="https://www.clever.com/partner-library"><span>Clever Library</span></a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4931"><a
+                                        href="/pricing#partners"><span>Pricing</span></a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1617"><a
+                                        target="_blank" rel="noopener" href="https://dev.clever.com/"><span>Developer
+                                            docs</span></a></li>
+                            </ul>
+                        </li>
+                        <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1618 menu-item_dedicated">
+                            <div class="menu-item-two-level"><a href="#"><span>Helpful Links</span><svg width="30"
+                                        height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                        <path
+                                            d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                            fill="#1464FF"></path>
+                                    </svg></a></div>
+                            <ul class="sub-menu">
+                                <li
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2066 is-icon-menu-item">
+                                    <a href="https://www.clever.com/developer-signup"><img width="120" height="120"
+                                            src="https://www.clever.com/wp-content/uploads/2023/06/Frame-427320377-7.png"
+                                            class="attachment-thumbnail size-thumbnail" alt=""
+                                            decoding="async"><span>Sign Up – For Partners</span></a></li>
+                                <li
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1620 is-icon-menu-item">
+                                    <a href="https://clever.com/appstore"><img width="55" height="96"
+                                            src="https://www.clever.com/wp-content/uploads/2023/06/Layer_1-5-1.png"
+                                            class="attachment-thumbnail size-thumbnail" alt=""
+                                            decoding="async"><span>App store</span></a></li>
+                                <li
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1621 is-icon-menu-item">
+                                    <a href="#"><img width="120" height="120"
+                                            src="https://www.clever.com/wp-content/uploads/2023/06/Frame-427320377-6.png"
+                                            class="attachment-thumbnail size-thumbnail" alt=""
+                                            decoding="async"><span>Resource hubs</span></a>
+                                    <ul class="sub-menu">
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4935">
+                                            <a href="https://www.clever.com/app-bts">Back to school resources</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2057 menu-item_default"><a
+                        href="https://www.clever.com/app-gallery">Apps On Clever</a></li>
+                <li
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10 menu-item_default">
+                    <div class="menu-item-wrap"><a href="#">Our Company</a><button class="open-sub-menu"><svg width="30"
+                                height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                <path
+                                    d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                    fill="#1464FF"></path>
+                            </svg></button></div>
+                    <ul class="sub-menu">
+                        <button class="close-sub-menu"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14.25" transform="rotate(-180 15 15)" fill="white"
+                                    stroke="#1464FF" stroke-width="1.5"></circle>
+                                <path
+                                    d="M9.46967 14.4697C9.17678 14.7626 9.17678 15.2374 9.46967 15.5303L14.2426 20.3033C14.5355 20.5962 15.0104 20.5962 15.3033 20.3033C15.5962 20.0104 15.5962 19.5355 15.3033 19.2426L11.0607 15L15.3033 10.7574C15.5962 10.4645 15.5962 9.98959 15.3033 9.6967C15.0104 9.40381 14.5355 9.40381 14.2426 9.6967L9.46967 14.4697ZM21 14.25L10 14.25L10 15.75L21 15.75L21 14.25Z"
+                                    fill="#1464FF"></path>
+                            </svg><span>Back to Menu</span></button>
+                        <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1630 menu-item_no">
+                            <div class="menu-item-two-level"><a href="https://www.clever.com/about"><span>About
+                                        Us</span><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                        <path
+                                            d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                            fill="#1464FF"></path>
+                                    </svg></a></div>
+                        </li>
+                        <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5935 menu-item_no">
+                            <div class="menu-item-two-level"><a href="https://www.clever.com/trust"><span>Trust comes
+                                        first</span><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                        <path
+                                            d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                            fill="#1464FF"></path>
+                                    </svg></a></div>
+                        </li>
+                        <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6130 menu-item_no">
+                            <div class="menu-item-two-level"><a
+                                    href="https://www.clever.com/about/news"><span>News</span><svg width="30"
+                                        height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                        <path
+                                            d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                            fill="#1464FF"></path>
+                                    </svg></a></div>
+                        </li>
+                        <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1631 menu-item_no">
+                            <div class="menu-item-two-level"><a
+                                    href="https://www.clever.com/about/careers"><span>Careers</span><svg width="30"
+                                        height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                        <path
+                                            d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                            fill="#1464FF"></path>
+                                    </svg></a></div>
+                        </li>
+                        <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1632 menu-item_no">
+                            <div class="menu-item-two-level"><a
+                                    href="https://www.clever.com/about/diversity-and-inclusion"><span>Clever
+                                        DEI</span><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                        <path
+                                            d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                            fill="#1464FF"></path>
+                                    </svg></a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1623 menu-item_mega-menu">
+                    <div class="menu-item-wrap"><a target="_blank" rel="noopener"
+                            href="https://support.clever.com/s/?language=en_US">Help</a><button
+                            class="open-sub-menu"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                <path
+                                    d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                    fill="#1464FF"></path>
+                            </svg></button></div>
+                    <ul class="sub-menu">
+                        <button class="close-sub-menu"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14.25" transform="rotate(-180 15 15)" fill="white"
+                                    stroke="#1464FF" stroke-width="1.5"></circle>
+                                <path
+                                    d="M9.46967 14.4697C9.17678 14.7626 9.17678 15.2374 9.46967 15.5303L14.2426 20.3033C14.5355 20.5962 15.0104 20.5962 15.3033 20.3033C15.5962 20.0104 15.5962 19.5355 15.3033 19.2426L11.0607 15L15.3033 10.7574C15.5962 10.4645 15.5962 9.98959 15.3033 9.6967C15.0104 9.40381 14.5355 9.40381 14.2426 9.6967L9.46967 14.4697ZM21 14.25L10 14.25L10 15.75L21 15.75L21 14.25Z"
+                                    fill="#1464FF"></path>
+                            </svg><span>Back to Menu</span></button>
+                        <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1624 menu-item_columns-2">
+                            <div class="menu-item-two-level"><a href="#"><span>Learn</span><svg width="30" height="30"
+                                        viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                        <path
+                                            d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                            fill="#1464FF"></path>
+                                    </svg></a></div>
+                            <ul class="sub-menu">
+                                <li
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1625 is-icon-menu-item">
+                                    <a target="_blank" rel="noopener" class="is-description"
+                                        href="https://support.clever.com/s/?language=en_US"><span
+                                            class="menu-item-wrap"><img width="97" height="96"
+                                                src="https://www.clever.com/wp-content/uploads/2023/06/faq-1-1.png"
+                                                class="attachment-thumbnail size-thumbnail" alt=""
+                                                decoding="async"><span>Help center</span>
+                                            <div class="menu-item-free">Free</div>
+                                        </span><span class="menu-item-description is-icon">24/7 access to an in-depth
+                                            knowledge base</span></a></li>
+                                <li
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2065 is-icon-menu-item">
+                                    <a class="is-description" href="https://www.clever.com/resource-library"><span
+                                            class="menu-item-wrap"><img width="96" height="96"
+                                                src="https://www.clever.com/wp-content/uploads/2023/06/library-1-1.png"
+                                                class="attachment-thumbnail size-thumbnail" alt=""
+                                                decoding="async"><span>Resource Library</span></span><span
+                                            class="menu-item-description is-icon">Explore case studies, reports and best
+                                            practices</span></a></li>
+                                <li
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2068 is-icon-menu-item">
+                                    <a class="is-description" href="https://www.clever.com/academy"><span
+                                            class="menu-item-wrap"><img width="96" height="79"
+                                                src="https://www.clever.com/wp-content/uploads/2023/06/classroom-1-1.png"
+                                                class="attachment-thumbnail size-thumbnail" alt=""
+                                                decoding="async"><span>Clever Academy</span>
+                                            <div class="menu-item-free">Free</div>
+                                        </span><span class="menu-item-description is-icon">Free online training for
+                                            educators</span></a></li>
+                                <li
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1628 is-icon-menu-item">
+                                    <a target="_blank" rel="noopener" class="is-description"
+                                        href="https://support.clever.com/hc/s/articles/Product-Releases?language=en_US"><span
+                                            class="menu-item-wrap"><img width="100" height="96"
+                                                src="https://www.clever.com/wp-content/uploads/2023/06/Layer_1-6-1.png"
+                                                class="attachment-thumbnail size-thumbnail" alt=""
+                                                decoding="async"><span>Product releases</span></span><span
+                                            class="menu-item-description is-icon">The latest product and feature updates
+                                            and platform improvements</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1629 menu-item_popular-resources"
+                            data-posts="[]">
+                            <div class="menu-item-two-level"><a href="#"><span>Popular Resources</span><svg width="30"
+                                        height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="14.25" stroke="#1464FF" stroke-width="1.5"></circle>
+                                        <path
+                                            d="M20.5303 15.5303C20.8232 15.2374 20.8232 14.7626 20.5303 14.4697L15.7574 9.6967C15.4645 9.40381 14.9896 9.40381 14.6967 9.6967C14.4038 9.98959 14.4038 10.4645 14.6967 10.7574L18.9393 15L14.6967 19.2426C14.4038 19.5355 14.4038 20.0104 14.6967 20.3033C14.9896 20.5962 15.4645 20.5962 15.7574 20.3033L20.5303 15.5303ZM9 15.75L20 15.75L20 14.25L9 14.25L9 15.75Z"
+                                            fill="#1464FF"></path>
+                                    </svg></a></div>
+                            <ul class="sub-menu">
+                                <li
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5587 is-icon-menu-item">
+                                    <a href="https://www.clever.com/blog/"><img width="120" height="120"
+                                            src="https://www.clever.com/wp-content/uploads/2023/06/Frame-427320377-6.png"
+                                            class="attachment-thumbnail size-thumbnail" alt=""
+                                            decoding="async"><span>Clever Blog</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>

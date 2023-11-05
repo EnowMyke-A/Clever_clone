@@ -9,3 +9,17 @@ function isElementInViewport(el) {
   }
   
   
+  window.addEventListener('load', function(){
+    
+    const Object = this.document.querySelectorAll('.animate-object');
+    Object.forEach((Object) => {
+      if(isElementInViewport(Object))
+      Object.classList.add('animate');
+    });
+    this.window.addEventListener('scroll', function(){
+      Object.forEach((Object) => {
+        if(isElementInViewport(Object))
+        Object.classList.add('animate');
+      });
+    })
+  })
