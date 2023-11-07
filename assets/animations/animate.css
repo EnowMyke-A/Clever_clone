@@ -36,7 +36,7 @@
   }
 
   .animate.growContainer{
-    animation: increaseWidth 1.15s forwards .3s;
+    animation: increaseWidth 0.3s forwards .2s;
   }
   
   
