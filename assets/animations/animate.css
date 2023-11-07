@@ -66,12 +66,11 @@
   @keyframes animateAbout{
     from{
         top: 0;
-        bottom: 0;
     }
 
     to{
         top: -150px;
-       
+        bottom: -150px;
     }
   }
 
