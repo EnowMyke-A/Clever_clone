@@ -813,6 +813,7 @@ section.first__section {
     top: 0;
     left: 0;
     padding: 50px 85px;
+    width: 100%;
 }
 
 .image__content__wrapper__container * {
@@ -823,6 +824,12 @@ section.first__section {
     display: flex;
     height: 100%;
     justify-content: space-between;
+    max-width: 940px;
+    margin: auto;
+}
+
+animate.container{
+   
 }
 
 .caption__svg__container>div:last-child {
@@ -1165,12 +1172,17 @@ footer .row{
     .caption__svg__container{
         flex-direction: column;
         justify-content: center;
+        row-gap: 20%;
     }
 
     .caption__svg__container>div:last-child{
         width: 100%;
         max-width: 100%;
         text-align: center;
+    }
+
+    .caption__svg__container>div:first-child{
+        width: 40%;
     }
 
     .caption__svg__container>div:last-child .link__container{
